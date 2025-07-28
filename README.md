@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 AdMyDash – AI Dashboard
 
-## Getting Started
+**AdMyDash** is a modern, responsive AI-powered dashboard built with **Next.js**, **TypeScript**, **Tailwind CSS**, and powerful charting components. It offers real-time data visualization through reusable components like line, bar, and pie charts with a sleek developer-friendly structure.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Features
+
+- ⚡ Fast and responsive UI
+- 📈 Prebuilt charts: Line, Bar, Pie
+- 🧩 Modular component structure
+- 🎨 Light/Dark theme with smooth transitions
+- 🗓️ Date range filtering
+- 📊 Dynamic mock data integration
+- 🧠 Built with `Suspense` and context-based `DataProvider`
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State/Context**: React Context API
+- **Charting**: Recharts
+- **UI Components**: Skeleton loaders, date pickers, data tables
+- **Environment**: ESLint, PostCSS, TSConfig, Modular File Structure
+
+---
+
+## 📁 Folder Structure (based on screenshot)
+
+├── app/ # App router-based pages
+│ └── dashboard/ # Dashboard page logic
+├── components/ # UI and dashboard components
+│ └── ui/ # Shared UI elements like Skeleton
+│ └── dashboard/ # Chart components (line, pie, bar)
+├── lib/ # Data context and mock data utils
+├── public/ # Static files
+├── src/
+├── types/ # TypeScript types
+├── .gitignore
+├── README.md
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+├── postcss.config.mjs
+├── eslint.config.mjs
+└── next-env.d.ts
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repo
+
+bash
+git clone hhttps://github.com/hdev916/AI-Analytics-Dashboard.git
+cd admydash
+
+Install dependencies ------>
+npm install
+
+Run the development server ------>
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+###Open http://localhost:3000 to view the dashboard.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🧪 Mock Data is currently generated via:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+import { generateDashboardData } from '@/lib/mock-data';
+You can plug in a real API later by replacing the mock data utility with your backend integration.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+🤝 Contribution
+Pull requests and contributions are welcome!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Fork the repo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a new branch
 
-## Deploy on Vercel
+Commit your changes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open a PR
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Built with ❤️ by Harsh Dev
